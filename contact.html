@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("{{ url_for('static', filename='pexels-tim-mossholder-974314.jpg') }}");
+    background-size: cover;
+    background-position: center;
+    width:600;
+    height:700;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.team-title {
+    text-align: center;
+    font-size: 48px;
+    color: #000000;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.card a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #555;
+}
+        .about-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, white,white);
+            color: #000000;
+            text-decoration: none;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background 0.4s ease-in-out, transform 0.2s ease-out, color 0.3s ease;
+            box-shadow: 0 2px 6px Aqua;
+            justify-content: left;
+            align-items: left;
+            margin-top:10px;
+            margin-left:20px;
+
+        }
+
+        .about-button:hover {
+            background: linear-gradient(45deg, #00e6e6, #0000e6);
+            transform: scale(1.05);
+            color: #f4f4f4;
+        }
+        .about-button1 {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, white,white);
+            color: #000000;
+            text-decoration: none;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background 0.4s ease-in-out, transform 0.2s ease-out, color 0.3s ease;
+            box-shadow: 0 2px 6px Aqua;
+            margin-top:10px;
+            margin-right:20px;
+        }
+
+        .about-button1:hover {
+            background: linear-gradient(45deg, #00e6e6, #0000e6);
+            transform: scale(1.05);
+            color: #f4f4f4;
+           
+        }
+</style>
+</head>
+<body>
+<div>
+<a href="/" class="about-button" id="early" >Home</a>
+<a href="/index1" class="about-button1" style="float: right;"> Prediction </a>
+</div>
+<div class="team-title">
+<br>
+<b>OUR TEAM</b></div>
+    <div class="container">
+        <div class="card">
+            <img src="{{ url_for('static', filename='CG.jpeg') }}" alt="Chirag Gupta">
+            <h3>Chirag Gupta</h3>
+            <p>Email ID: 21104009@mail.jiit.ac.in</p>
+        </div>
+        <div class="card"> 
+            <img src="{{ url_for('static', filename='MS.jpeg') }}" alt="Manya ">
+            <h3>Manya Manish Srivastava</h3>
+            <p>Email ID: 21104011@mail.jiit.ac.in</p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='AK1.jpeg') }}" alt="Akshansh">
+            <h3>Akshansh Sharma</h3>
+            <p>Email ID: 21104008@mail.jiit.ac.in</p>       
+         </div>
+    </div>
+</body>
+</html>

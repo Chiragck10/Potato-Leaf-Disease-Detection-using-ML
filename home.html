@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h1>Home </h1></title>
+    <style>
+        body {
+            font-family: "Comic Sans MS";
+            margin: 0px;
+            padding: 0px;
+            background-color: #f4f4f4;
+            background-image:  url("{{ url_for('static', filename='cotton.jpg') }}");
+            min-height: 80vh;
+            
+        }
+
+        header nav {
+            background-color: #333;
+            height: 120px;
+            color: #fff;
+            text-align: center;
+           padding-top: 0px;
+           margin-top: 0px;
+           padding: 0.25em;
+            background-image:url("{{ url_for('static', filename='chikki.jpg') }}");
+            font-size: 1.8rem;
+        }
+       header nav h1
+        {
+            color: rgb(227, 220, 220);
+            padding-bottom: 50px;
+            margin-bottom: 20px;
+            font-size: 60px;
+            padding-bottom: 100px;
+            -webkit-animation: bar 1s ease-in-out infinite alternate;
+            -moz-animation: bar 1s ease-in-out infinite alternate;
+            animation: bar 1s ease-in-out infinite alternate;
+         }
+         @-webkit-keyframes bar
+         {
+     from 
+     {
+       text-shadow: 0 0 10px #f00606, 0 0 20px #ffffff, 0 0 30px #c000e6, 0 0 40px #00e673, 0 0 50px #0fc4a0, 0 0 60px #2a00e6, 0 0 70px #00e65c;
+     }
+     to 
+     {
+       text-shadow: 0 0 20px #000000, 0 0 30px #02ffd9, 0 0 40px #ff00c3, 0 0 50px #4dffff, 0 0 60px #4dffe1, 0 0 70px #b7ff00, 0 0 80px #24c3b3;
+     }
+   }
+
+        main {
+            max-width: 800px;
+            height: 450px;
+            margin-bottom: 55px ;
+            margin-top: 150px;
+            margin-left: 320px;
+            margin-right: 50px;
+            align-items: center;
+            padding: 50px;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-image:url("{{ url_for('static', filename='cotton.jpg') }}");
+            font-family: "Comic Sans MS";
+            font-size: 20px;
+        }
+        
+        .main p{
+            margin-bottom: 20px;
+            font-family: Times New Roman;
+
+        }
+      .akki
+        {
+            text-align: center;
+           align-items: center;
+          margin-right: 20px;
+        }
+
+         .akki button 
+         {
+            background-color:#00e673;
+            color:Black;
+            font-weight:550;
+            font-size:1.5rem;
+            width: 500px;
+            text-align: center;
+            height:45px;
+            border-radius: 10%;
+            cursor: pointer;
+            font-family: "Comic Sans MS";
+         }
+         .akki button:hover {
+            background-color: #0056b3;
+        }
+        .bottom
+      {
+       display: flex;
+        height : 80px;
+        background-color: rgb(47, 45, 45);
+        align-items: center;
+        margin-top: 180px;
+        padding-bottom: 0px;
+        text-align: center;
+        background-image: url("{{ url_for('static', filename='chikki.jpg') }}");
+        padding : 10px;
+      }
+      .bottom ul{
+        display: flex;
+        padding : 50px;
+       
+      }
+      .bottom ul li button{
+        background-color: rgb(12, 12, 12);
+        color: white;
+        padding:20px;
+        border-radius: 20%;
+        margin-right: 270px;
+        margin-left: 130px;
+        cursor: pointer;
+        font-family: "Comic Sans MS";
+        -webkit-animation: bar 1s ease-in-out infinite alternate;
+            -moz-animation: bar 1s ease-in-out infinite alternate;
+            animation: bar 1s ease-in-out infinite alternate;
+      }
+      .bottom ul li button:hover {
+            background-color: #0056b3;
+        }
+      @-webkit-keyframes bar
+  {
+     from 
+     {
+       text-shadow: 0 0 10px #000000, 0 0 20px #ffffff, 0 0 30px #000000, 0 0 40px #ffffff, 0 0 50px #000000, 0 0 60px #ffffff, 0 0 70px #cfcdcb;
+     }
+     to 
+     {
+       text-shadow: 0 0 20px #0a0101, 0 0 30px #ffffff, 0 0 40px #171818, 0 0 50px #ffffff, 0 0 60px #101111, 0 0 70px #ffffff, 0 0 80px #011412;
+     }
+   }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <h1>POTATOGUARD</h1>
+    </header>
+    
+    </nav>
+   
+    <main>
+        <p>Potato farming involves cultivating potatoes, a versatile and widely consumed crop globally. It typically starts with selecting quality potato seeds or tubers for planting. Farmers prepare the soil, ensuring it's loose, well-drained, and rich in nutrients.
+
+            Planting usually occurs in early spring, where potato seeds are planted in rows or mounds. As the plants grow, hilling—covering the base of the plants with soil—is done to protect the developing tubers from sunlight and encourage more growth.
+            
+            Potatoes require adequate watering, especially during dry periods, and controlling weeds is essential to prevent competition for nutrients and water. Pest and disease management are crucial aspects of potato farming, as they're susceptible to various pests like potato beetles and diseases like blight.
+            
+            Harvesting takes place when the plants mature. It involves carefully digging up the potatoes using specialized equipment or by hand. After harvesting, proper storage conditions—cool, dark, and well-ventilated—are essential to prevent spoilage.
+            
+            Potatoes are a staple in many diets worldwide, making potato farming an essential and widespread agricultural practice.</p>
+            
+                                <p  style="color: #ff5733;" > To prevent the disease to grow in your farm get to know our prediction by clicking below!!</p>
+    
+    </main>
+    <div class="akki">
+    <section>
+        <a href="/index1"><button>Click here to predict</button></a>
+    </section>
+</div>
+<section>
+    <div class = "bottom">
+        <ul>
+            
+            <li><a href="/early"><button>Early_Blight</button></a></li>
+            <li><a href="/contact"><button>Contact_Us</button></a></li>
+            <li><a href="/late"><button>Late_Blight</button></a></li>
+        </ul>
+   </div>
+</section>
+
+
+  
+
+</body>
+</html>
